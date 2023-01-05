@@ -5,7 +5,7 @@
 #include "QTextStream"
 #include "playerwindow.h"
 #include "signupwindow.h"
-#include "bosswindow.h"
+#include "settings.h"
 
 LoginWindow::LoginWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -46,7 +46,7 @@ void LoginWindow::on_loginButton_clicked()
     if(PlayerUsername == "morvarid" && PlayerPass == "5046")
     {
         this->close();
-        BossWindow *newmain= new BossWindow();
+        settings *newmain= new settings();
         newmain->show();
     }
 

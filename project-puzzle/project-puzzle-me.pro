@@ -26,7 +26,6 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += main.cpp\
     playerwindow.cpp \
     signupwindow.cpp \
-    bosswindow.cpp \
     menu.cpp \
     scoreboard.cpp \
     settings.cpp \
@@ -35,7 +34,6 @@ SOURCES += main.cpp\
 HEADERS  += \
     playerwindow.h \
     signupwindow.h \
-    bosswindow.h \
     menu.h \
     scoreboard.h \
     settings.h \
@@ -44,7 +42,6 @@ HEADERS  += \
 FORMS    += \
     playerwindow.ui \
     signupwindow.ui \
-    bosswindow.ui \
     menu.ui \
     scoreboard.ui \
     settings.ui \
