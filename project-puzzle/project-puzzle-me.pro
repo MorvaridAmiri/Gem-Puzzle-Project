@@ -29,7 +29,8 @@ SOURCES += main.cpp\
     menu.cpp \
     scoreboard.cpp \
     settings.cpp \
-    loginwindow.cpp
+    loginwindow.cpp \
+    adminlogin.cpp
 
 HEADERS  += \
     playerwindow.h \
@@ -37,7 +38,8 @@ HEADERS  += \
     menu.h \
     scoreboard.h \
     settings.h \
-    loginwindow.h
+    loginwindow.h \
+    adminlogin.h
 
 FORMS    += \
     playerwindow.ui \
@@ -45,4 +47,5 @@ FORMS    += \
     menu.ui \
     scoreboard.ui \
     settings.ui \
-    loginwindow.ui
+    loginwindow.ui \
+    adminlogin.ui

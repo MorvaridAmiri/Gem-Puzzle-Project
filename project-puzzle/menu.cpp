@@ -2,7 +2,7 @@
 #include "ui_menu.h"
 #include "loginwindow.h"
 #include "playerwindow.h"
-#include "settings.h"
+#include "adminlogin.h"
 
 menu::menu(QWidget *parent) :
     QMainWindow(parent),
@@ -34,6 +34,6 @@ void menu::on_guestButton_clicked()
 void menu::on_settingsButton_clicked()
 {
     this->close();
-    settings *FreshMain = new settings();
+    adminlogin *FreshMain = new adminlogin();
     FreshMain->show();
 }

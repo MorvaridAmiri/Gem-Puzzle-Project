@@ -40,58 +40,61 @@ void LoginWindow::on_loginButton_clicked()
 {
     QString PlayerUsername = ui->usernametb->text();
     QString PlayerPass = ui->passwordtb->text();
-
-
-    //*********************************************************************************
-    if(PlayerUsername == "morvarid" && PlayerPass == "5046")
+    if(PlayerUsername == nullptr || PlayerPass == nullptr)
     {
-        this->close();
-        settings *newmain= new settings();
-        newmain->show();
+        ui->invalidlable->setText("Please Fill All Of The Items");
     }
 
+    //    //*********************************************************************************
+    //    if(PlayerUsername == "morvarid" && PlayerPass == "5046")
+    //    {
+    //        this->close();
+    //        settings *newmain= new settings();
+    //        newmain->show();
+    //    }
+
+    //    else
+    //    {
+    int UNum = CountUsers() ;
+    struct UserData
+    {
+        QString Name;
+        QString Pass;
+    };
+    bool NewUser = true;
+    UserData *User = new UserData[UNum];
+
+    QFile file("UserList.txt");
+    file.open(QIODevice::ReadOnly);
+    QTextStream rd(&file);
+    file.seek(0);
+    for(int i = 0 ; i < UNum ; i++)
+    {
+        User[i].Name = rd.readLine();
+        User[i].Pass = rd.readLine();
+    }
+    file.close();
+
+    for(int i = 0 ; i < UNum ; i++)
+    {
+        if(User[i].Name == PlayerUsername && User[i].Pass == PlayerPass)
+        {
+            NewUser = false;
+            break;
+        }
+    }
+
+    if(NewUser)
+    {
+        ui->invalidlable->setText("Invalid username or password");
+    }
     else
     {
-        int UNum = CountUsers() ;
-        struct UserData
-        {
-            QString Name;
-            QString Pass;
-        };
-        bool NewUser = true;
-        UserData *User = new UserData[UNum];
-
-        QFile file("UserList.txt");
-        file.open(QIODevice::ReadOnly);
-        QTextStream rd(&file);
-        file.seek(0);
-        for(int i = 0 ; i < UNum ; i++)
-        {
-            User[i].Name = rd.readLine();
-            User[i].Pass = rd.readLine();
-        }
-        file.close();
-
-        for(int i = 0 ; i < UNum ; i++)
-        {
-            if(User[i].Name == PlayerUsername && User[i].Pass == PlayerPass)
-            {
-                NewUser = false;
-                break;
-            }
-        }
-
-        if(NewUser)
-        {
-            ui->invalidlable->setText("Invalid username or password");
-        }
-        else
-        {
-            this->close();
-            playerWindow *Newmain= new playerWindow();
-            Newmain->show();
-        }
+        this->close();
+        playerWindow *Newmain= new playerWindow();
+        Newmain->show();
     }
+    //    }
 
 }
 
