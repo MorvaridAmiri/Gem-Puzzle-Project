@@ -51,16 +51,16 @@ Lable
    <widget class="QLabel" name="invalidlable">
     <property name="geometry">
      <rect>
-      <x>320</x>
+      <x>230</x>
       <y>170</y>
-      <width>211</width>
+      <width>300</width>
       <height>16</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">
-font: 17pt &quot;Cooper Black&quot;;
-color : rgb(255, 255, 255);</string>
+     <string notr="true">font: 10pt;
+color: rgb(255, 0, 0);
+</string>
     </property>
     <property name="text">
      <string/>
@@ -204,8 +204,13 @@ background-color:rgb(255,255,255);
       <x>220</x>
       <y>80</y>
       <width>311</width>
-      <height>20</height>
+      <height>25</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+color : rgb(255, 255, 255);
+font: 19pt &quot;MV Boli&quot;;</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="passwordtb">
@@ -214,8 +219,13 @@ background-color:rgb(255,255,255);
       <x>220</x>
       <y>130</y>
       <width>311</width>
-      <height>20</height>
+      <height>25</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+color : rgb(255, 255, 255);
+font: 19pt &quot;MV Boli&quot;;</string>
     </property>
    </widget>
   </widget>

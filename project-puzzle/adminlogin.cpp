@@ -1,5 +1,9 @@
 #include "adminlogin.h"
 #include "ui_adminlogin.h"
+#include <QFile>
+#include "QStringList"
+#include "QTextStream"
+
 #include "settings.h"
 
 adminlogin::adminlogin(QWidget *parent) :

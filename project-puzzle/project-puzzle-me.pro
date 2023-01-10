@@ -30,7 +30,12 @@ SOURCES += main.cpp\
     scoreboard.cpp \
     settings.cpp \
     loginwindow.cpp \
-    adminlogin.cpp
+    adminlogin.cpp \
+    timeset.cpp \
+    movesset.cpp \
+    backstate.cpp \
+    boardset.cpp \
+    about.cpp
 
 HEADERS  += \
     playerwindow.h \
@@ -39,7 +44,12 @@ HEADERS  += \
     scoreboard.h \
     settings.h \
     loginwindow.h \
-    adminlogin.h
+    adminlogin.h \
+    timeset.h \
+    movesset.h \
+    backstate.h \
+    boardset.h \
+    about.h
 
 FORMS    += \
     playerwindow.ui \
@@ -48,4 +58,9 @@ FORMS    += \
     scoreboard.ui \
     settings.ui \
     loginwindow.ui \
-    adminlogin.ui
+    adminlogin.ui \
+    timeset.ui \
+    movesset.ui \
+    backstate.ui \
+    boardset.ui \
+    about.ui

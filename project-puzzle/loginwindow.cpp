@@ -53,48 +53,48 @@ void LoginWindow::on_loginButton_clicked()
     //        newmain->show();
     //    }
 
-    //    else
-    //    {
-    int UNum = CountUsers() ;
-    struct UserData
-    {
-        QString Name;
-        QString Pass;
-    };
-    bool NewUser = true;
-    UserData *User = new UserData[UNum];
-
-    QFile file("UserList.txt");
-    file.open(QIODevice::ReadOnly);
-    QTextStream rd(&file);
-    file.seek(0);
-    for(int i = 0 ; i < UNum ; i++)
-    {
-        User[i].Name = rd.readLine();
-        User[i].Pass = rd.readLine();
-    }
-    file.close();
-
-    for(int i = 0 ; i < UNum ; i++)
-    {
-        if(User[i].Name == PlayerUsername && User[i].Pass == PlayerPass)
-        {
-            NewUser = false;
-            break;
-        }
-    }
-
-    if(NewUser)
-    {
-        ui->invalidlable->setText("Invalid username or password");
-    }
     else
     {
-        this->close();
-        playerWindow *Newmain= new playerWindow();
-        Newmain->show();
+        int UNum = CountUsers() ;
+        struct UserData
+        {
+            QString Name;
+            QString Pass;
+        };
+        bool NewUser = true;
+        UserData *User = new UserData[UNum];
+
+        QFile file("UserList.txt");
+        file.open(QIODevice::ReadOnly);
+        QTextStream rd(&file);
+        file.seek(0);
+        for(int i = 0 ; i < UNum ; i++)
+        {
+            User[i].Name = rd.readLine();
+            User[i].Pass = rd.readLine();
+        }
+        file.close();
+
+        for(int i = 0 ; i < UNum ; i++)
+        {
+            if(User[i].Name == PlayerUsername && User[i].Pass == PlayerPass)
+            {
+                NewUser = false;
+                break;
+            }
+        }
+
+        if(NewUser)
+        {
+            ui->invalidlable->setText("Invalid username or password");
+        }
+        else
+        {
+            this->close();
+            playerWindow *Newmain= new playerWindow();
+            Newmain->show();
+        }
     }
-    //    }
 
 }
 

@@ -22,6 +22,12 @@ private slots:
 
     void on_settingsButton_clicked();
 
+    void on_exit_clicked();
+
+    void on_scoreboard_clicked();
+
+    void on_about_us_clicked();
+
 private:
     Ui::menu *ui;
 };

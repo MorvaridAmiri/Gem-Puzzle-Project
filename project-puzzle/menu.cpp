@@ -3,6 +3,8 @@
 #include "loginwindow.h"
 #include "playerwindow.h"
 #include "adminlogin.h"
+#include "scoreboard.h"
+#include "about.h"
 
 menu::menu(QWidget *parent) :
     QMainWindow(parent),
@@ -31,9 +33,29 @@ void menu::on_guestButton_clicked()
 
 }
 
+void menu::on_scoreboard_clicked()
+{
+    this->close();
+    scoreboard *FreshMain = new scoreboard();
+    FreshMain->show();
+}
+
 void menu::on_settingsButton_clicked()
 {
     this->close();
     adminlogin *FreshMain = new adminlogin();
+    FreshMain->show();
+}
+
+void menu::on_exit_clicked()
+{
+    this->close();
+}
+
+
+void menu::on_about_us_clicked()
+{
+    this->close();
+    about *FreshMain = new about();
     FreshMain->show();
 }

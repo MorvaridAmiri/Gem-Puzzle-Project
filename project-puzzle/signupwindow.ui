@@ -105,16 +105,16 @@ color : rgb(255, 255, 255);</string>
    <widget class="QLabel" name="invalidlabel">
     <property name="geometry">
      <rect>
-      <x>320</x>
+      <x>230</x>
       <y>180</y>
-      <width>211</width>
-      <height>16</height>
+      <width>300</width>
+      <height>22</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">
-font: 17pt &quot;Cooper Black&quot;;
-color : rgb(255, 255, 255);</string>
+     <string notr="true">font: 10pt;
+color: rgb(255, 0, 0);
+</string>
     </property>
     <property name="text">
      <string/>
@@ -126,8 +126,13 @@ color : rgb(255, 255, 255);</string>
       <x>220</x>
       <y>80</y>
       <width>311</width>
-      <height>20</height>
+      <height>25</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+color : rgb(255, 255, 255);
+font: 19pt &quot;MV Boli&quot;;</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="passwordup">
@@ -136,15 +141,20 @@ color : rgb(255, 255, 255);</string>
       <x>220</x>
       <y>140</y>
       <width>311</width>
-      <height>20</height>
+      <height>25</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+color : rgb(255, 255, 255);
+font: 19pt &quot;MV Boli&quot;;</string>
     </property>
    </widget>
    <widget class="QPushButton" name="signup_Button">
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>210</y>
+      <y>220</y>
       <width>481</width>
       <height>31</height>
      </rect>
