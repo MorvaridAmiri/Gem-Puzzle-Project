@@ -63,7 +63,7 @@ font: 17pt &quot;Cooper Black&quot;;
 color : rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>              puzzle board setting</string>
+     <string>                           setting</string>
     </property>
    </widget>
    <widget class="QPushButton" name="three">

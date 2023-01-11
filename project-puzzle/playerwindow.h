@@ -15,6 +15,9 @@ public:
     explicit playerWindow(QWidget *parent = 0);
     ~playerWindow();
 
+private slots:
+    void on_back_clicked();
+
 private:
     Ui::playerWindow *ui;
 };

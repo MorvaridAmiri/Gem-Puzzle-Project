@@ -18,6 +18,12 @@ public:
 private slots:
     void on_back_clicked();
 
+    void on_three_clicked();
+
+    void on_four_clicked();
+
+    void on_five_clicked();
+
 private:
     Ui::boardset *ui;
 };

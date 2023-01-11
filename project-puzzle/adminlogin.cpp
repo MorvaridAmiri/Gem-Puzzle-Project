@@ -3,8 +3,7 @@
 #include <QFile>
 #include "QStringList"
 #include "QTextStream"
-
-#include "settings.h"
+#include "boardset.h"
 
 adminlogin::adminlogin(QWidget *parent) :
     QMainWindow(parent),
@@ -27,7 +26,7 @@ void adminlogin::on_login_admin_clicked()
     if(PlayerUsername == "morvarid" && PlayerPass == "5046")
     {
         this->close();
-        settings *newmain= new settings();
+        boardset *newmain= new boardset();
         newmain->show();
     }
     else if(PlayerUsername == nullptr || PlayerPass == nullptr )

@@ -5,7 +5,7 @@
 #include "QTextStream"
 #include "playerwindow.h"
 #include "signupwindow.h"
-#include "settings.h"
+
 
 LoginWindow::LoginWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -44,14 +44,6 @@ void LoginWindow::on_loginButton_clicked()
     {
         ui->invalidlable->setText("Please Fill All Of The Items");
     }
-
-    //    //*********************************************************************************
-    //    if(PlayerUsername == "morvarid" && PlayerPass == "5046")
-    //    {
-    //        this->close();
-    //        settings *newmain= new settings();
-    //        newmain->show();
-    //    }
 
     else
     {
