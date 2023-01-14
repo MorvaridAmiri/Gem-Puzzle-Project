@@ -37,7 +37,9 @@ SOURCES += main.cpp\
     five.cpp \
     board9.cpp \
     board16.cpp \
-    board25.cpp
+    board25.cpp \
+    sure.cpp \
+    table9.cpp
 
 HEADERS  += \
     playerwindow.h \
@@ -53,7 +55,9 @@ HEADERS  += \
     five.h \
     board9.h \
     board16.h \
-    board25.h
+    board25.h \
+    sure.h \
+    table9.h
 
 FORMS    += \
     playerwindow.ui \
@@ -69,4 +73,5 @@ FORMS    += \
     five.ui \
     board9.ui \
     board16.ui \
-    board25.ui
+    board25.ui \
+    sure.ui

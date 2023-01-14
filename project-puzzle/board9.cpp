@@ -1,5 +1,6 @@
 #include "board9.h"
 #include "ui_board9.h"
+#include "playerwindow.h"
 
 board9::board9(QWidget *parent) :
     QMainWindow(parent),
@@ -11,4 +12,11 @@ board9::board9(QWidget *parent) :
 board9::~board9()
 {
     delete ui;
+}
+
+void board9::on_back_clicked()
+{
+    this->close();
+    playerWindow *Newmain= new playerWindow();
+    Newmain->show();
 }
