@@ -38,8 +38,7 @@ SOURCES += main.cpp\
     board9.cpp \
     board16.cpp \
     board25.cpp \
-    sure.cpp \
-    table9.cpp
+    sure.cpp
 
 HEADERS  += \
     playerwindow.h \
@@ -56,8 +55,7 @@ HEADERS  += \
     board9.h \
     board16.h \
     board25.h \
-    sure.h \
-    table9.h
+    sure.h
 
 FORMS    += \
     playerwindow.ui \

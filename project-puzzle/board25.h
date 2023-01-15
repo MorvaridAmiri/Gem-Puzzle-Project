@@ -15,6 +15,9 @@ public:
     explicit board25(QWidget *parent = 0);
     ~board25();
 
+private slots:
+    void on_back_clicked();
+
 private:
     Ui::board25 *ui;
 };

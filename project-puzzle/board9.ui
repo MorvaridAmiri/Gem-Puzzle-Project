@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>610</width>
+    <width>615</width>
     <height>742</height>
    </rect>
   </property>
@@ -133,297 +133,121 @@ color : rgb(255, 255, 255);</string>
      <string>Back</string>
     </property>
    </widget>
-   <widget class="QTableWidget" name="tableWidget">
+   <widget class="QPushButton" name="Button1">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>80</y>
-      <width>600</width>
-      <height>461</height>
+      <x>20</x>
+      <y>90</y>
+      <width>181</width>
+      <height>131</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: #0a0e1a;
-     gridline-color: #ffffff; 
-color : #ffffff;
-font: 24pt &quot;MV Boli&quot;;
-align-item : center;
-</string>
-    </property>
-    <property name="sortingEnabled">
-     <bool>false</bool>
-    </property>
-    <attribute name="horizontalHeaderVisible">
-     <bool>false</bool>
-    </attribute>
-    <attribute name="horizontalHeaderDefaultSectionSize">
-     <number>198</number>
-    </attribute>
-    <attribute name="horizontalHeaderMinimumSectionSize">
-     <number>60</number>
-    </attribute>
-    <attribute name="verticalHeaderVisible">
-     <bool>false</bool>
-    </attribute>
-    <attribute name="verticalHeaderDefaultSectionSize">
-     <number>150</number>
-    </attribute>
-    <attribute name="verticalHeaderMinimumSectionSize">
-     <number>147</number>
-    </attribute>
-    <row>
-     <property name="text">
-      <string/>
-     </property>
-    </row>
-    <row>
-     <property name="text">
-      <string/>
-     </property>
-    </row>
-    <row>
-     <property name="text">
-      <string/>
-     </property>
-    </row>
-    <column>
-     <property name="text">
-      <string/>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string/>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string/>
-     </property>
-    </column>
-   </widget>
-   <widget class="Line" name="line_5">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>520</y>
-      <width>610</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 0);
-color: rgb(255, 255, 0);
-margin  : 5px;
-
-
-
-
-
-
-</string>
-    </property>
-    <property name="lineWidth">
-     <number>2</number>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
+    <property name="text">
+     <string>7</string>
     </property>
    </widget>
-   <widget class="Line" name="line">
+   <widget class="QPushButton" name="Button2">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>70</y>
-      <width>16</width>
-      <height>461</height>
+      <x>220</x>
+      <y>90</y>
+      <width>181</width>
+      <height>131</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 0);
-color: rgb(255, 255, 0);
-margin  : 5px;
-
-
-
-
-
-
-</string>
-    </property>
-    <property name="lineWidth">
-     <number>2</number>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Vertical</enum>
+    <property name="text">
+     <string>5</string>
     </property>
    </widget>
-   <widget class="Line" name="line_2">
+   <widget class="QPushButton" name="Button3">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>80</y>
-      <width>16</width>
-      <height>451</height>
+      <x>420</x>
+      <y>90</y>
+      <width>181</width>
+      <height>131</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 0);
-color: rgb(255, 255, 0);
-margin  : 5px;
-
-
-
-
-
-
-</string>
-    </property>
-    <property name="lineWidth">
-     <number>2</number>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Vertical</enum>
+    <property name="text">
+     <string>1</string>
     </property>
    </widget>
-   <widget class="Line" name="line_3">
+   <widget class="QPushButton" name="Button4">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>80</y>
-      <width>16</width>
-      <height>451</height>
+      <x>20</x>
+      <y>240</y>
+      <width>181</width>
+      <height>131</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 0);
-color: rgb(255, 255, 0);
-margin  : 5px;
-
-
-
-
-
-
-</string>
-    </property>
-    <property name="lineWidth">
-     <number>2</number>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Vertical</enum>
+    <property name="text">
+     <string/>
     </property>
    </widget>
-   <widget class="Line" name="line_4">
+   <widget class="QPushButton" name="Button9">
     <property name="geometry">
      <rect>
-      <x>600</x>
-      <y>80</y>
-      <width>16</width>
-      <height>451</height>
+      <x>420</x>
+      <y>390</y>
+      <width>181</width>
+      <height>131</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 0);
-color: rgb(255, 255, 0);
-margin  : 5px;
-
-
-
-
-
-
-</string>
-    </property>
-    <property name="lineWidth">
-     <number>2</number>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Vertical</enum>
+    <property name="text">
+     <string>3</string>
     </property>
    </widget>
-   <widget class="Line" name="line_6">
+   <widget class="QPushButton" name="Button8">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>370</y>
-      <width>610</width>
-      <height>16</height>
+      <x>220</x>
+      <y>390</y>
+      <width>181</width>
+      <height>131</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 0);
-color: rgb(255, 255, 0);
-margin  : 5px;
-
-
-
-
-
-
-</string>
-    </property>
-    <property name="lineWidth">
-     <number>2</number>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
+    <property name="text">
+     <string>6</string>
     </property>
    </widget>
-   <widget class="Line" name="line_7">
+   <widget class="QPushButton" name="Button7">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>70</y>
-      <width>610</width>
-      <height>16</height>
+      <x>20</x>
+      <y>390</y>
+      <width>181</width>
+      <height>131</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 0);
-color: rgb(255, 255, 0);
-margin  : 5px;
-
-
-
-
-
-
-</string>
-    </property>
-    <property name="lineWidth">
-     <number>2</number>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
+    <property name="text">
+     <string>2</string>
     </property>
    </widget>
-   <widget class="Line" name="line_8">
+   <widget class="QPushButton" name="Button6">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>220</y>
-      <width>610</width>
-      <height>16</height>
+      <x>420</x>
+      <y>240</y>
+      <width>181</width>
+      <height>131</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 0);
-color: rgb(255, 255, 0);
-margin  : 5px;
-
-
-
-
-
-
-</string>
+    <property name="text">
+     <string>4</string>
     </property>
-    <property name="lineWidth">
-     <number>2</number>
+   </widget>
+   <widget class="QPushButton" name="Button5">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>240</y>
+      <width>181</width>
+      <height>131</height>
+     </rect>
     </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
+    <property name="text">
+     <string>8</string>
     </property>
    </widget>
   </widget>
@@ -432,7 +256,7 @@ margin  : 5px;
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>610</width>
+     <width>615</width>
      <height>21</height>
     </rect>
    </property>

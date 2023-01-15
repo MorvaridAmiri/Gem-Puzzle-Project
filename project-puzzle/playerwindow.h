@@ -20,6 +20,10 @@ private slots:
 
     void on_easy_clicked();
 
+    void on_medium_clicked();
+
+    void on_hard_clicked();
+
 private:
     Ui::playerWindow *ui;
 };
